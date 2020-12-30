@@ -2,9 +2,7 @@ package com.github.brezp.es.client.entity;
 
 import org.elasticsearch.search.suggest.completion.CompletionSuggestionBuilder;
 
-/**
- * Created by jiahong on 2018/07/09.
- */
+
 public class EsSuggest {
     private CompletionSuggestionBuilder builder;
     private String sugField;

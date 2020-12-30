@@ -6,9 +6,7 @@ import org.elasticsearch.search.sort.SortOrder;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by turner on 2018/6/28.
- */
+
 
 public class EsSort {
 

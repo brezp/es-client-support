@@ -4,6 +4,7 @@ import java.util.Locale;
 
 /**
  * Add Doc 操作的类型
+ * @author brezp
  */
 public enum AddDocOpType {
     /**
