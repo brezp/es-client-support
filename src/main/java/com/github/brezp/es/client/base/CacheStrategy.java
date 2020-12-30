@@ -1,4 +1,4 @@
-package com.github.brezp.es.client.cache;
+package com.github.brezp.es.client.base;
 
 import com.github.benmanes.caffeine.cache.Caffeine;
 import com.github.benmanes.caffeine.cache.RemovalCause;
@@ -20,7 +20,6 @@ import java.util.concurrent.TimeUnit;
 /**
  * 缓存策略
  *
- * @author Leibniz on 2019/10/29 11:57 上午
  */
 public enum CacheStrategy {
     ALWAYS { //全部一直缓存
