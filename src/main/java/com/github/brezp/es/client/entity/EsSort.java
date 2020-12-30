@@ -8,6 +8,9 @@ import java.util.List;
 
 
 
+/**
+ * @author brezp
+ */
 public class EsSort {
 
     private List<Tuple<String, SortOrder>> sortNameOrders = new LinkedList<>();

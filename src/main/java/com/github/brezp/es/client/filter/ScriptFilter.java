@@ -14,6 +14,7 @@ import java.util.Objects;
 
 /**
  *
+ * @author brezp
  */
 public class ScriptFilter extends AbstractRequestFilter {
 

@@ -15,6 +15,7 @@ import java.util.Map;
 
 /**
  *
+ * @author brezp
  */
 public class ScrollFilter extends AbstractRequestFilter {
 

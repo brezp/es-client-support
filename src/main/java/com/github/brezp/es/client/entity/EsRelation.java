@@ -2,6 +2,7 @@ package com.github.brezp.es.client.entity;
 
 /**
  * copy from ES7.9 org.apache.lucene.search.TotalHits.Relation
+ * @author brezp
  */
 public enum EsRelation {
     EQUAL_TO,
