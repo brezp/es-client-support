@@ -562,7 +562,7 @@ public class ReaderApi {
     }
 
     /**
-     * test case: com.datastory.common3.es.api.ReaderApiTest#testSuggest()
+     *
      *
      * @param esSuggests 关键词列表
      * @return 搜过结果
