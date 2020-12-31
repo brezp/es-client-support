@@ -27,9 +27,9 @@ public class ReaderApiTest {
     private static Logger LOG = Logger.getLogger(ReaderApiTest.class);
 
 
-    private  static ReaderApi readerApi;
+    private static ReaderApi readerApi;
 
-    private  static EsClient client;
+    private static EsClient client;
 
     @Before
     public void init() throws Exception {
@@ -60,7 +60,7 @@ public class ReaderApiTest {
             executorService.execute(() -> {
                 try {
                     EsReaderResult esReaderResult = readerApi.search(0, finalI, queryBuilder);
-                    System.out.println("EsReaderResult:" + esReaderResult.getDataSize());
+                    System.out.println(Thread.currentThread().getId() + "EsReaderResult:" + esReaderResult.getDataSize());
                 } catch (Exception e) {
                     LOG.error(e.getMessage(), e);
                 }
