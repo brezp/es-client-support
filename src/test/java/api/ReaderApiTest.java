@@ -28,6 +28,8 @@ public class ReaderApiTest {
 
 
     private static ReaderApi readerApi;
+    private static ReaderApi _2readerApi;
+    //private static ReaderApi readerApi;
 
     private static EsClient client;
 
@@ -40,8 +42,8 @@ public class ReaderApiTest {
         this.client = client;
         boolean ping = client.getClient().ping();
         System.out.println(ping);
-        ReaderApi readerApi = new ReaderApi(client, "ds-banyan-video-index-v1", "comment");
-        this.readerApi = readerApi;
+        this.readerApi = new ReaderApi(client, "ds-banyan-video-index-v1", "comment");
+        this._2readerApi = new ReaderApi(client, "ds-banyan-video-index-v1", "comment");
     }
 
     @After
@@ -60,7 +62,9 @@ public class ReaderApiTest {
             executorService.execute(() -> {
                 try {
                     EsReaderResult esReaderResult = readerApi.search(0, finalI, queryBuilder);
+                    EsReaderResult _2esReaderResult = _2readerApi.search(0, finalI, queryBuilder);
                     System.out.println(Thread.currentThread().getId() + "EsReaderResult:" + esReaderResult.getDataSize());
+                    System.out.println(Thread.currentThread().getId() + "_2es: EsReaderResult:" + _2esReaderResult.getDataSize());
                 } catch (Exception e) {
                     LOG.error(e.getMessage(), e);
                 }
